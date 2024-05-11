@@ -17,8 +17,8 @@ def menu():
     game.screen.blit(game.images["brick_bg"], (0, 0))
     game.screen.blit(game.title_font.render("Game", 1, "BLACK"), (20, 0))
     if len(game.buttons) == 0:
-        game.buttons.append(Button(20, 100, 250, 80, "GREEN", game.menu_font, "New game"))
-        game.buttons.append(Button(20, 200, 250, 80, "BLUE", game.menu_font, "Load game"))
+        game.buttons.append(Button(20, 100, 250, 80, "GREY", game.menu_font, "New game"))
+        game.buttons.append(Button(20, 200, 250, 80, "GREY", game.menu_font, "Load game"))
     for btn in game.buttons:
         btn.draw()
     if game.buttons[0].is_clicked():
